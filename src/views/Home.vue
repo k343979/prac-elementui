@@ -1,10 +1,13 @@
 <template>
     <div id="home">
-        <el-container>
-            <el-header class="bg-purple-dark">
-                <Header :header_title="$t('attributes.header_title')" />
+        <el-container v-loading="full_loading">
+            <el-header class="bg-main-color">
+                <Header
+                    :header_title="$t('attributes.project_title')"
+                    @loading="changeFullLoad" />
             </el-header>
-            <el-container v-loading="is_loading">
+            <el-container v-loading="is_loading" class="flex-wrap">
+                <HeaderSubMenu @loading="changeFullLoad" />
                 <el-aside width="200px">Aside</el-aside>
                 <el-container>
                     <el-main>Main</el-main>
@@ -16,16 +19,26 @@
 </template>
 
 <script>
-    import Header from '../components/header'
+    import Header from '../components/Header'
+    import HeaderSubMenu from '../components/HeaderSubMenu'
     export default {
         name: 'Home',
         data() {
             return {
+                // 画面ローディング
+                full_loading: false,
                 is_loading: false
+            }
+        },
+        methods: {
+            // フルスクリーンローディング切替
+            changeFullLoad(is_loading) {
+                this.full_loading = is_loading;
             }
         },
         components: {
             Header,
+            HeaderSubMenu,
         }
     }
 </script>

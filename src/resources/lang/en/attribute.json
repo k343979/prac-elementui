@@ -1,6 +1,20 @@
 {
     "attributes": {
-        "header_title": "yusuke's website",
-        "setting": "setting"
+        "project_title": "MA Tool",
+        "language": "English",
+        "japanese": "Japanese",
+        "english": "English",
+        "home": "home",
+        "setting": "settings",
+        "user_info": "user information",
+        "setting_account": "your account",
+        "setting_lang": "Language",
+        "other": "the other"
+    },
+
+    "header": {
+    },
+
+    "header_sub_menu": {
     }
 }
