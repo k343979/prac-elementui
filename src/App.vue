@@ -19,6 +19,8 @@
 </script>
 
 <style>
+    /* common style global */
+
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -26,8 +28,6 @@
         text-align: center;
         color: #2c3e50;
     }
-
-    /* 共通スタイル */
 
     html, body, div, span, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -82,9 +82,14 @@
     a {
         margin:0;
         padding:0;
-        font-size:100%;
+        font-size:14px;
         vertical-align:baseline;
         background:transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(255, 208, 75)!important;
     }
 
     span {
@@ -164,6 +169,26 @@
         margin-bottom: 0!important;
     }
 
+    .px-40 {
+        padding-left: 40px!important;
+        padding-right: 40px!important;
+    }
+
+    .px-30 {
+        padding-left: 30px!important;
+        padding-right: 30px!important;
+    }
+
+    .px-20 {
+        padding-left: 20px!important;
+        padding-right: 20px!important;
+    }
+
+    .px-10 {
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+
     .ps-40 {
         padding-left: 40px!important;
     }
@@ -200,23 +225,6 @@
         font-size: 20px!important;
     }
 
-    .el-row {
-        margin-bottom: 20px;
-    }
-
-    .el-col {
-        border-radius: 4px;
-    }
-
-    .el-dropdown-link {
-        cursor: pointer;
-        /* color: #409EFF; */
-    }
-
-    .el-icon-arrow-down {
-        font-size: 12px;
-    }
-
     .bg-main-color {
         background-color: #074B8F!important;
     }
@@ -229,6 +237,14 @@
         color: #fff!important;
     }
 
+    .ft-sub-color {
+        color: rgb(255, 208, 75)!important;
+    }
+
+    .hover-sub-color:hover {
+        color: rgb(255, 208, 75)!important;
+    }
+
     .grid-content {
         border-radius: 4px;
         min-height: 36px;
@@ -237,6 +253,45 @@
     .btn-border-collapse {
         border: none!important;
     }
+
+
+    /* style apply to global  */
+    /* adjust style that elementui sets initially */
+
+    .el-row {
+        margin-bottom: 20px;
+    }
+
+    .el-col {
+        border-radius: 4px;
+    }
+
+    .el-dropdown-link {
+        cursor: pointer;
+    }
+
+    .el-icon-arrow-down {
+        font-size: 12px;
+    }
+
+    /* HeaderSubMenu home icon */
+    .el-menu-item i {
+        color: #fff!important;
+    }
+
+    .el-menu-item.is-active i {
+        color: inherit!important;
+    }
+
+    /* HeaderSubMenu setting icon */
+    .el-submenu__title i {
+        color: #fff!important;
+    }
+
+    .el-submenu.is-active i {
+        color: inherit!important;
+    }
+
 
     /* #nav {
         padding: 30px;

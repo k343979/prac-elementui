@@ -1,15 +1,16 @@
 {
     "attributes": {
         "project_title": "MA Tool",
+        "usecase": "Use Case",
         "language": "English",
         "japanese": "Japanese",
         "english": "English",
-        "home": "home",
-        "setting": "settings",
-        "user_info": "user information",
-        "setting_account": "your account",
+        "home": "Home",
+        "setting": "Settings",
+        "user_info": "User information",
+        "setting_account": "Your account",
         "setting_lang": "Language",
-        "other": "the other"
+        "other": "The other"
     },
 
     "header": {
