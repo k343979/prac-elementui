@@ -26,15 +26,20 @@
         data() {
             return {
                 // 画面ローディング
-                full_loading: false,
+                full_loading: true,
                 is_loading: false
             }
         },
         methods: {
             // フルスクリーンローディング切替
-            changeFullLoad(is_loading) {
-                this.full_loading = is_loading;
+            changeFullLoad(loading_flag) {
+                this.full_loading = loading_flag;
             }
+        },
+        mounted() {
+            setTimeout(() => {
+                this.full_loading = false;
+            }, 1000);
         },
         components: {
             Header,
