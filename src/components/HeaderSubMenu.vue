@@ -4,7 +4,7 @@
             <el-col :span="24">
                 <el-menu
                     :default-active="activeIndex"
-                    class="el-menu-demo d-flex justify-center"
+                    class="el-menu-demo d-flex justify-content-center"
                     mode="horizontal"
                     @select="selectMenu"
                     background-color="#074B8F"
